@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    color: #334155;
+    background-color: #FAF7FD;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', 'Nunito', sans-serif;
+  }
+}
+
+.font-heading {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-serif-accent {
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Custom Soft Glass & Subtle Shadow Styles */
+.soft-glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(227, 213, 248, 0.6);
+  box-shadow: 0 10px 30px -10px rgba(147, 51, 234, 0.05);
+}
+
+.soft-purple-gradient {
+  background: linear-gradient(135deg, #FAF7FD 0%, #F3E8FF 50%, #EEF2FF 100%);
+}
+
+.hero-blob-glow {
+  background: radial-gradient(circle, rgba(192, 132, 252, 0.25) 0%, rgba(204, 251, 241, 0.2) 50%, transparent 75%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7FD;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8B4FE;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C084FC;
+}
